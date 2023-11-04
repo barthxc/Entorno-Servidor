@@ -18,7 +18,6 @@ Descubre algunos consejos y trucos ingeniosos que te harán escribir código PHP
 
 ## 🐘 PHP, el ElePHPante
 
-![PHP Logo](php_logo.png)
 
 Este repositorio está dedicado al maravilloso lenguaje de programación PHP. ¡Atrévete a explorar su poder y versatilidad!
 
