@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FeedBack - Pablo Bartolomé Gallardo</title>
   </head>
   <body>
     <div>
       <h1>Ejercicio FeedbackUd3 - Pablo Bartolomé Gallardo</h1>
       	<!--- Si levantas el servidor usando php -S localhost:3000 no te funcionará si tu archivo HTML no es llamado como index.html-->
-        <?php
 
-
-?>
       <form action="registros.php" method="POST">
         <div>
           <label for="nombre">Nombre:</label>
@@ -42,6 +39,7 @@
             type="tel"
             id="telefono"
             name="telefono"
+            maxlength="9"
             placeholder="123123123"
             required
           />

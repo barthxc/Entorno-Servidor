@@ -1,0 +1,237 @@
+/*Predeterminadas*/
+html{
+  box-sizing: border-box; /* padin y borde forma parte del la medida del elemento */
+  font-size: 62.5%; /* => 1rem = a 10px*/       
+}
+*,*:before, *:after{
+  box-sizing: inherit; /* Hereda del elemento padre */
+}
+body{
+  background: rgb(176, 176, 113);
+     
+  
+  
+}
+
+/*** Contenedor****/
+.contenedor{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center; 
+  min-height: 100vh;
+}
+/**** Header y Footer ****/
+.header, .footer{
+  width: 100%;
+  background-color: rgb(16, 129, 84);  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-content: center;  
+  
+}
+
+.footer{
+
+  margin-top: auto;
+
+}
+
+.contenedor-nav{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  justify-content: space-between;
+  justify-items: center;
+   
+   
+}
+.nav{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr)) ;
+  gap: 5rem; 
+  margin:3rem 3rem; 
+}
+.nav-enlaces{
+  width: 100%;   
+  text-decoration: none;
+  background: rgb(176, 176, 113);
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: .5rem; 
+  cursor: pointer;   
+}
+.nav-enlaces:hover{
+  background: rgb(126, 231, 189);
+ }
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 2rem;
+  padding-top: 2rem;       
+}
+h2{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #000;
+  margin: 2rem;
+}
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(16, 129, 84);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin: 0 auto;  
+  
+}
+
+/***Registrar****/
+.main{
+  background-color: rgb(16, 129, 84);
+  margin: 2rem auto;
+  min-width: 40rem;
+  width: 36%;   
+  text-align: center; 
+}
+.form{   
+  max-width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  justify-content: center;
+   
+}
+.form-group{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center; 
+  margin-bottom: 2rem;
+ 
+}  
+.form-etiqueta{  
+  min-width: 18rem;
+  font-size: 1.6rem; 
+  text-transform: uppercase;  
+  text-align: end;
+  
+}
+.form-input{
+  width: 100%;
+  min-width: 15rem;  
+  background-color: rgb(176, 176, 113);  
+  font-size: 1.8rem;  
+  border: none;
+  border-color: none;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 35px; 
+}
+.boton{
+  width: 100%;
+  max-width: 10rem;
+  display: flex;    
+  background-color: rgb(176, 176, 113);
+  border: none;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(16, 129, 84);
+  cursor: pointer;
+  margin: 2rem auto;
+}
+.boton:hover{
+  background: rgb(126, 231, 189);
+  color: rgb(16, 129, 84);
+}
+
+/***index***/
+.listado{/* contenedor listar*/
+  width:95%;    
+  background-color: rgb(16, 129, 84);
+  margin: 4rem auto;
+
+
+
+  
+}
+.tabla{   /* Tabla listar */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1rem;
+  min-width: 95%;     
+  margin: 0 auto;
+  border-collapse: collapse;  
+  font-size: 1.6rem;  
+}
+.tabla:last-child{  /* Ultima tabla listada para que de el margin */
+  margin-bottom: 2rem;
+}
+tr{ /* filas tabla */
+  width: 95%;
+  display: flex;
+  flex-direction: row;  
+  background-color: rgb(176, 176, 113);  
+  margin: 0 auto;  
+}
+th{ /* columnas encabezados */
+  width: 12rem;
+}
+td{ /* columnas resultados */
+  width: 100%;
+
+}
+th, td{
+  text-align: left;
+ 
+      
+}
+
+/***Consultar***/
+
+.consulta{ 
+  width:100%;
+  display: flex; 
+  flex-direction: column;  
+  align-items: center;
+}
+li{
+  width: 40rem;
+  list-style: none;
+  font-size: 1.8rem;  
+  font-weight: bolder;
+  color: rgb(126, 231, 189);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.consulta-clave{
+  min-width: 15rem;
+  display: flex;  
+  color: #000; 
+}
+.clave-valor{
+  width: 100%;  
+  padding-left: 10px;
+  margin: .5rem;  
+}
+
+.errores{
+  color:rgb(141, 11, 11);
+  font-size: 2.2rem;
+  margin: .5rem;
+  
+}
