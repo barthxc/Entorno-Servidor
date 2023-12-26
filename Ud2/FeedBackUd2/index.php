@@ -25,7 +25,7 @@
     */
     $pos = strripos($frase, $palabra);
     $fraseNueva = str_replace('entorno servidor', 'DES', $frase);
-    echo "<h3>Posición de la palabra 'Programación' : </h2>";
+    echo "<h3>Posición de la palabra 'Programación' : </h3>";
     echo "<h1>Solución 1: </h1><br>";
     echo "<p>Posicion de la palabra programación: $pos </p>";
 

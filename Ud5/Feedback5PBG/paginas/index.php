@@ -9,7 +9,6 @@ Ipsum non totam eaque dicta iste optio perferendis impedit, placeat debitis aliq
 Asperiores id consequatur adipisci quia magni error, temporibus molestiae, beatae eum quibusdam corporis, facere voluptate corrupti perferendis in! Tempore, hic. Aut eveniet dolores velit repudiandae, tenetur ex rem repellendus nobis.
 Ipsa explicabo, perspiciatis quae deserunt voluptatem earum commodi ex perferendis iure officiis placeat cum hic repellat temporibus. Dignissimos tempore temporibus rem culpa veritatis, id quasi voluptas quisquam laudantium quis exercitationem.
 Qui harum soluta dolorem quis assumenda dolore ullam, quos excepturi. Quod pariatur cupiditate officia hic unde nobis. Placeat unde reprehenderit minima animi obcaecati, iure ipsum inventore hic illo, possimus dolorem.</p>
-
 <?php
 
 

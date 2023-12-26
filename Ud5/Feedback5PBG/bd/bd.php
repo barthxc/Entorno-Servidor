@@ -38,11 +38,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
 //Logout
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['logout'])) {
     session_start();
-    
+    $_SESSION = array();
+
+
+    if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000,
+            $params["path"], $params["domain"],
+            $params["secure"], $params["httponly"]
+        );
+    }
     session_destroy();
-    
+
     header('Location: index.php');
-    exit;
+    exit;  
 }
 
 
@@ -72,7 +81,6 @@ function registrarUsuario($conexion, $nombre, $email, $contraseña)
 
 function loginUsuario($conexion, $email, $contraseña)
 {
-    echo "<script>console.log('hola');</script>";
     
     if (empty($email) || empty($contraseña)) {
         header('Location: login.php?errorform=true');
@@ -80,13 +88,12 @@ function loginUsuario($conexion, $email, $contraseña)
     } else {
         try {
             $query = "SELECT * FROM usuarios WHERE email = :email AND contraseña = :contrasena";
-            echo "<script>console.log('$query');</script>";
             $statement = $conexion->prepare($query);
             $statement->bindParam(':email', $email, PDO::PARAM_STR);
             $statement->bindParam(':contrasena', $contraseña, PDO::PARAM_STR);
             $statement->execute();
             $usuario = $statement->fetch(PDO::FETCH_ASSOC);
-
+            
 
             if ($usuario) {
                 // Usuario autenticado, establecer la sesión
